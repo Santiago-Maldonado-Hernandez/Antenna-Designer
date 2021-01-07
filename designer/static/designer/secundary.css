@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+.list nav ul li{
+  display: inline-block;
+}
+
+.contenedor{
+  background: yellow;
+  height: 150px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  background: red;
+  width: 120px;
+}
+
+.test{
+  text-align: center;
+}
+
+a.button{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
+
+a.button:hover{
+  color: #1883ba;
+  background-color: #ffffff;
+}

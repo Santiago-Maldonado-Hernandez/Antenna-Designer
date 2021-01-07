@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Horn Designer </title>
+</head>
+<body>
+
+	<nav class="menu">
+		<ul>
+			<a href="{% url 'designer-home'%}"> Home </a>
+		</ul>
+	</nav>
+
+	<header>
+		<h1 style="text-align: center"> Horn Designer </h1>	
+	</header>
+
+	
+
+	<div class="data">
+		<h2 style="text-align: center"> Input Data </h2>
+		
+		<h3> Frequency range </h3>
+		
+		<form action="#" method="GET">
+			{% csrf_token %}
+			{{ form }}
+			<label for="minfx"> Minimum Frequency: </label>
+			<input type="number" name="minfx" id="minfx"> <br> <br>
+			<label for="maxfx"> Maximum Frequency: </label>
+			<input type="number" name="maxfx" id="maxfx">	<br> <br>
+			<input type="submit" name="Calculate" value="Calculate">
+		</form>
+		
+		
+	</div>
+	
+	<style type="text/css">
+		
+		div.data{
+		  position: absolute;
+		  left: auto;
+		  width: 400px;
+		} 
+
+	</style>
+
+</body>
+</html>
